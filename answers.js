@@ -39,19 +39,24 @@ const plantee = ["Plantee", "plant", 5000, "Mordor"];
 const porgee = ["Porgee", "Porg", 186, "Ahch-To"];
 const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
 
-plantee[2]++;
-console.log(plantee);
-wolfy[3] = "Gotham City";
-console.log(wolfy);
-dart.push("Hawkins");
-console.log(dart);
-porgee.shift();
-porgee.unshift("Gameboy");
-console.log(porgee);
+// plantee[2]++;
+// console.log(plantee);
+// wolfy[3] = "Gotham City";
+// console.log(wolfy);
+// dart.push("Hawkins");
+// console.log(dart);
+// porgee.shift();
+// porgee.unshift("Gameboy");
+// console.log(porgee);
+
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
+for (let ninja of ninjaTurtles) {
+  console.log(ninja.toUpperCase());
+}
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
