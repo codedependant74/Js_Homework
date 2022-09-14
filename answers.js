@@ -55,7 +55,7 @@ const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"];
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 for (let ninja of ninjaTurtles) {
-  console.log(ninja.toUpperCase());
+  // console.log(ninja.toUpperCase());
 }
 ////////////////////////////////
 // Methods, Revisited
@@ -81,13 +81,13 @@ const favMovies = [
   "Snatch",
   "Fast and Furious",
 ];
-console.log(favMovies[8]);
+// console.log(favMovies[8]);
 favMovies.sort();
 favMovies.pop();
 favMovies.push("Guardians of the Galaxy");
 favMovies.reverse();
 favMovies.unshift("The Shawshank Redemption");
-console.log(favMovies.indexOf("Django Unchained"));
+// console.log(favMovies.indexOf("Django Unchained"));
 favMovies.splice(14, 1, "Avatar");
 const half = Math.ceil(favMovies.length / 2);
 const secondHalf = favMovies.slice(half);
@@ -103,15 +103,28 @@ const whereIsWaldo = [
   ["Lucinda", "Jacc", "Neff", "Snoop"],
   ["Petunia", ["Baked Goods", "Waldo"]],
 ];
-console.log(whereIsWaldo.indexOf("Eggbert"));
+// console.log(whereIsWaldo.indexOf("Eggbert"));
 whereIsWaldo.splice(1, 1);
 whereIsWaldo[2][2] = "No One";
-console.log(whereIsWaldo[2][1][1]);
+// console.log(whereIsWaldo[2][1][1]);
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
-
+const kittyTalk = [
+  "...human...why you taking pictures of me?...",
+  "...the catnip made me do it...",
+  "...why does the red dot always get away...",
+];
+let meow = 0;
+for (let i = 0; i <= 20; i++) {
+  if (i % 2 === 0) {
+    meow = Math.floor(Math.random() * 3);
+    console.log(kittyTalk[meow]);
+  } else {
+    console.log("Love me, pet me! HSSSSSS!");
+  }
+}
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
