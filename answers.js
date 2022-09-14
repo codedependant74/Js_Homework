@@ -60,7 +60,40 @@ for (let ninja of ninjaTurtles) {
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
-
+const favMovies = [
+  "Jaws",
+  "The Fellowship of the Ring",
+  "Howl's Moving Castle",
+  "Django Unchained",
+  "Cloud Atlas",
+  "The Usual Suspects",
+  "Toy Story",
+  "Conan the Barbarian",
+  "Titanic",
+  "Harry Potter",
+  "Fried Green Tomatoes",
+  "Volver",
+  "Oculus",
+  "Seven",
+  "Black Panther",
+  "Harry Potter",
+  "Imitation of Life",
+  "Snatch",
+  "Fast and Furious",
+];
+console.log(favMovies[8]);
+favMovies.sort();
+favMovies.pop();
+favMovies.push("Guardians of the Galaxy");
+favMovies.reverse();
+favMovies.unshift("The Shawshank Redemption");
+console.log(favMovies.indexOf("Django Unchained"));
+favMovies.splice(14, 1, "Avatar");
+const half = Math.ceil(favMovies.length / 2);
+const secondHalf = favMovies.slice(half);
+console.log(secondHalf);
+console.log(favMovies);
+console.log(favMovies.indexOf("Fast and Furious"));
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
