@@ -91,12 +91,22 @@ console.log(favMovies.indexOf("Django Unchained"));
 favMovies.splice(14, 1, "Avatar");
 const half = Math.ceil(favMovies.length / 2);
 const secondHalf = favMovies.slice(half);
-console.log(secondHalf);
-console.log(favMovies);
-console.log(favMovies.indexOf("Fast and Furious"));
+// console.log(secondHalf);
+// console.log(favMovies);
+// console.log(favMovies.indexOf("Fast and Furious"));
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [
+  ["Timmy", "Frank"],
+  "Eggbert",
+  ["Lucinda", "Jacc", "Neff", "Snoop"],
+  ["Petunia", ["Baked Goods", "Waldo"]],
+];
+console.log(whereIsWaldo.indexOf("Eggbert"));
+whereIsWaldo.splice(1, 1);
+whereIsWaldo[2][2] = "No One";
+console.log(whereIsWaldo[2][1][1]);
 
 ////////////////////////////////
 //  Excited Kitten
